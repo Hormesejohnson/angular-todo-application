@@ -1,0 +1,10 @@
+
+<input (change)="change($event)" type="text" placeholder="todo" >
+<input (click)="add()" type=submit value="add">
+
+<ul>
+    <li *ngFor="let item of todos">
+        <app-todo [tod]=item></app-todo></li>
+    
+
+</ul>    
